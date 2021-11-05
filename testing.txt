@@ -1,0 +1,25 @@
+Integaration testing
+====================
+
+if requet is 'get'
+and URL is 'customer'
+then reponse is '200'
+and body has all customer details
+
+if requet is 'post'
+and URL is 'customer'
+then reponse is '201'
+
+
+system testing
+==============
+
+if requet is 'get'
+and URL is 'customer'
+then reponse is '200'
+and 
+requet is 'delete'
+and and URL is 'customer/<cust_no>'
+then reponse is '200'
+and customer/<cust_no> deleted
+
