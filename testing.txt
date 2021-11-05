@@ -1,3 +1,12 @@
+Unit testing
+============
+
+if account balance is 1000
+and interest rate is 1.5%
+then call interest calculation function
+result of daily interest would be 1000 * 1.5 / 100 / 365
+
+
 Integaration testing
 ====================
 
@@ -22,4 +31,21 @@ requet is 'delete'
 and and URL is 'customer/<cust_no>'
 then reponse is '200'
 and customer/<cust_no> deleted
+
+
+Acceptenance testing
+====================
+
+Given web-page-address is "sample-bank/customer/<given-cust-no>" as get request
+when the database have given-cust-no 
+then display given-cust-no details 
+and return code 200
+
+Given web-page-address is "sample-bank/post/customer" as post request
+and body has sustomer details
+when the database doesnot has given-cust-no 
+then add details customer details to database
+and return code 201
+
+
 
